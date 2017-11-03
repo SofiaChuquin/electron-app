@@ -11,8 +11,16 @@ $(document).ready(function(){
     infinite: true,
     speed: 500,
     fade: true,
-    autoplay: true
+    autoplay: true,
+    autoplaySpeed: 2000
   });
+
+  $('.photos').slick({
+    centerMode: true,
+    centerPadding: '60px',
+    slidesToShow: 3
+  });
+
   $(this).keydown((e) => {
     if (e.which === 123) {
       waitSync();
