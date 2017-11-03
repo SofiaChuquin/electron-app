@@ -4,22 +4,28 @@
     <meta charset='UTF-8'>
     <title>Electron app</title>
     <link href='stylesheets/main.css' rel='stylesheet' />
+    <link rel='stylesheet' type='text/css' href='slick/slick.css'/>
+    <link rel='stylesheet' type='text/css' href='slick/slick-theme.css'/>
     <script>window.$ = window.jQuery = require('./jquery-3.2.1.min.js');</script>
     <script>
       if (window.module) module = window.module;
       require('./jquery-ui.min.js')
     </script>
+    <script src='./index.js'></script>
   </head>
   <body>
     <h1 class='title'>Carousel</h1>
     <div class='photos-slider'>
-      <img class='img-1' src='images/summer.jpg' />
-      <img class='img-2' src='images/valentinesday.jpg' />
-      <img class='img-3' src='images/mothersday.jpg' />
-      <img class='img-4' src='images/fathersday.jpg' />
-      <img class='img-5' src='images/halloween.jpg' />
-      <img class='img-6' src='images/christmas.jpg' />
+      <div><img class='img-1' src='images/summer.jpg' /></div>
+      <div><img class='img-2' src='images/valentinesday.jpg' /></div>
+      <div><img class='img-3' src='images/mothersday.jpg' /></div>
+      <div><img class='img-4' src='images/fathersday.jpg' /></div>
+      <div><img class='img-5' src='images/halloween.jpg' /></div>
+      <div><img class='img-6' src='images/christmas.jpg' /></div>
     </div>
+    <script type='text/javascript' src='//code.jquery.com/jquery-1.11.0.min.js'></script>
+    <script type='text/javascript' src='//code.jquery.com/jquery-migrate-1.2.1.min.js'></script>
+    <script type='text/javascript' src='slick/slick.min.js'></script>
     <script>
       require('./renderer.js')
     </script>
