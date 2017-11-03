@@ -1,3 +1,17 @@
+body {
+  background-color: #f1f1f1;
+}
+
 .title {
   text-align: center;
+}
+
+.photos-slider {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.photo {
+  width: 500px;
+  height: 300px;
 }
