@@ -2,7 +2,13 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <title>Electron app</title>
+    <link href="stylesheets/main.css" rel="stylesheet" />
+    <script>window.$ = window.jQuery = require('./jquery-3.2.1.min.js');</script>
+    <script>
+      if (window.module) module = window.module;
+      require('./jquery-ui.min.js')
+    </script>
   </head>
   <body>
     <h1>Hello World!</h1>
