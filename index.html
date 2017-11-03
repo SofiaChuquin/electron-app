@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset='UTF-8'>
     <title>Electron app</title>
-    <link href="stylesheets/main.css" rel="stylesheet" />
+    <link href='stylesheets/main.css' rel='stylesheet' />
     <script>window.$ = window.jQuery = require('./jquery-3.2.1.min.js');</script>
     <script>
       if (window.module) module = window.module;
@@ -11,7 +11,15 @@
     </script>
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <h1 class='title'>Carousel</h1>
+    <div class='photos-slider'>
+      <img class='img-1' src='images/summer.jpg' />
+      <img class='img-2' src='images/valentinesday.jpg' />
+      <img class='img-3' src='images/mothersday.jpg' />
+      <img class='img-4' src='images/fathersday.jpg' />
+      <img class='img-5' src='images/halloween.jpg' />
+      <img class='img-6' src='images/christmas.jpg' />
+    </div>
     <script>
       require('./renderer.js')
     </script>
