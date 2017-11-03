@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <meta charset='UTF-8'>
+    <title>Electron app</title>
+    <link href='stylesheets/main.css' rel='stylesheet' />
+    <script>window.$ = window.jQuery = require('./jquery-3.2.1.min.js');</script>
+    <script>
+      if (window.module) module = window.module;
+      require('./jquery-ui.min.js')
+    </script>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
-
+    <h1 class='title'>Carousel</h1>
+    <div class='photos-slider'>
+      <img class='img-1' src='images/summer.jpg' />
+      <img class='img-2' src='images/valentinesday.jpg' />
+      <img class='img-3' src='images/mothersday.jpg' />
+      <img class='img-4' src='images/fathersday.jpg' />
+      <img class='img-5' src='images/halloween.jpg' />
+      <img class='img-6' src='images/christmas.jpg' />
+    </div>
     <script>
-      // You can also require other files to run in this process
       require('./renderer.js')
     </script>
   </body>
