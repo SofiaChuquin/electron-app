@@ -4,24 +4,38 @@
     <meta charset='UTF-8'>
     <title>Electron app</title>
     <link href='stylesheets/main.css' rel='stylesheet' />
+    <link rel='stylesheet' type='text/css' href='./slick/slick.css'/>
+    <link rel='stylesheet' type='text/css' href='./slick/slick-theme.css'/>
     <script>window.$ = window.jQuery = require('./jquery-3.2.1.min.js');</script>
     <script>
       if (window.module) module = window.module;
       require('./jquery-ui.min.js')
     </script>
+    <script src='./index.js'></script>
   </head>
   <body>
     <h1 class='title'>Carousel</h1>
+    <h3>Fade with autoplay</h3>
     <div class='photos-slider'>
-      <img class='img-1' src='images/summer.jpg' />
-      <img class='img-2' src='images/valentinesday.jpg' />
-      <img class='img-3' src='images/mothersday.jpg' />
-      <img class='img-4' src='images/fathersday.jpg' />
-      <img class='img-5' src='images/halloween.jpg' />
-      <img class='img-6' src='images/christmas.jpg' />
+      <div><img class='img-1 photo' src='images/summer.jpg' /></div>
+      <div><img class='img-2 photo' src='images/valentinesday.jpg' /></div>
+      <div><img class='img-3 photo' src='images/mothersday.jpg' /></div>
+      <div><img class='img-4 photo' src='images/fathersday.jpg' /></div>
+      <div><img class='img-5 photo' src='images/halloween.jpg' /></div>
+      <div><img class='img-6 photo' src='images/christmas.jpg' /></div>
+    </div>
+    <h3>Center mode</h3>
+    <div class='photos slider'>
+      <div><img class='img-1 photo-center' src='images/summer.jpg' /></div>
+      <div><img class='img-2 photo-center' src='images/valentinesday.jpg' /></div>
+      <div><img class='img-3 photo-center' src='images/mothersday.jpg' /></div>
+      <div><img class='img-4 photo-center' src='images/fathersday.jpg' /></div>
+      <div><img class='img-5 photo-center' src='images/halloween.jpg' /></div>
+      <div><img class='img-6 photo-center' src='images/christmas.jpg' /></div>
     </div>
     <script>
       require('./renderer.js')
     </script>
+    <script type='text/javascript' src='./slick/slick.min.js'></script>
   </body>
 </html>
